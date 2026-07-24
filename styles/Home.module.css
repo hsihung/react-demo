@@ -1,0 +1,114 @@
+.page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(320px, 440px);
+  gap: 48px;
+  align-items: center;
+  padding: 48px clamp(24px, 6vw, 88px);
+  background:
+    radial-gradient(circle at top left, rgba(22, 119, 255, 0.18), transparent 34%),
+    linear-gradient(135deg, #f5f9ff 0%, #eff4ff 48%, #f9fbff 100%);
+}
+
+.hero {
+  max-width: 560px;
+}
+
+.badge {
+  display: inline-flex;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(22, 119, 255, 0.1);
+  color: #1677ff;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.title {
+  margin: 0 0 12px !important;
+  font-size: clamp(2.5rem, 5vw, 4.5rem) !important;
+  line-height: 1.05 !important;
+}
+
+.subtitle {
+  margin-bottom: 32px;
+  font-size: 1.1rem;
+  color: #4f5f7a;
+}
+
+.highlights {
+  width: 100%;
+}
+
+.highlightItem {
+  padding: 20px 24px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+}
+
+.highlightItem :global(.ant-typography) {
+  margin-bottom: 0;
+}
+
+.card {
+  width: 100%;
+  border-radius: 28px;
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.16);
+}
+
+.formWrapper {
+  width: 100%;
+}
+
+.formTitle,
+.formDescription {
+  margin-bottom: 0 !important;
+}
+
+.formDescription {
+  margin-top: 8px !important;
+  color: #66758c;
+}
+
+.formOptions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.signupText {
+  text-align: center;
+  color: #66758c;
+}
+
+.signupText a {
+  margin-left: 6px;
+}
+
+@media (max-width: 960px) {
+  .page {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 32px 20px;
+  }
+
+  .hero {
+    max-width: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .card {
+    border-radius: 24px;
+  }
+
+  .formOptions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
