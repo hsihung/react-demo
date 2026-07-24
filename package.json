@@ -6,16 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "dependencies": {
     "antd": "6.5.1",
-    "next": "12.3.7",
+    "next": "16.2.11",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },
   "devDependencies": {
-    "eslint": "8.57.1",
-    "eslint-config-next": "12.3.7"
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.2.11"
   }
 }
